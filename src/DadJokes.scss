@@ -1,0 +1,70 @@
+.DadJokes {
+  // color: var(--text-color);
+  padding: 2rem;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    & > * {
+      border-radius: 8px;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      width: 30%;
+      padding: 2rem;
+      color: var(--secondary-color-light);
+      background-color: var(--secondary-color-dark);
+      box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.2);
+
+      h1 {
+        font-size: 2.6rem;
+      }
+      i {
+        font-size: 8rem;
+        color: var(--color-main);
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 100px;
+        color: var(--secondary-color-dark);
+        background-color: var(--secondary-color-light);
+        padding: 1rem 1.6rem;
+        font-family: "Archia";
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        &:hover {
+          transform: translateY(-3px);
+          background-color: var(--secondary-color-light);
+          box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+  &__jokes-list {
+    border-radius: 0px 8px 8px 0;
+    width: 70%;
+    align-self: center;
+    padding: 2rem;
+    height: 90%;
+    background-color: var(--secondary-color-light);
+    overflow: scroll;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  }
+}

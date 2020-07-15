@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Archia";
+  src: local("Archia") url(./assets/fonts/Archia/Archia-SemiBold.otf)
+    format("otf");
+}
+
+:root {
+  --color-main: #fcbf1e;
+  --primary-color-light: #faddff;
+  --primary-color-transparent: #d8b5de34;
+  --primary-color: #035aa6;
+  --primary-color-dark: #8e479c;
+  --secondary-color-light: #4db0dd;
+  --secondary-color: #076cc4;
+  --secondary-color-dark: #240a5a;
+  --bg-color: #ececec;
+  --text-color: #949494;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-size: 62.5%;
+}
+body {
+  font-family: "Archia";
+  margin: 0;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

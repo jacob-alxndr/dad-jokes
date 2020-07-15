@@ -1,0 +1,74 @@
+.Joke {
+  // border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  // margin-bottom: 1rem;
+  min-height: 8rem;
+  border-bottom: 2px solid var(--primary-color-transparent);
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2rem;
+    button {
+      cursor: pointer;
+      font-size: 2rem;
+      border-radius: 50%;
+      // padding: 6px;
+      text-align: center;
+      background-color: transparent;
+
+      border: none;
+      &.upvote {
+        color: rgb(104, 235, 104);
+      }
+      &.downvote {
+        color: rgb(235, 104, 104);
+      }
+    }
+  }
+  &__votes {
+    width: 30%;
+    min-height: 100%;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      display: inline-block;
+      padding: 0.3em;
+      min-width: 3.4em;
+      color: var(--secondary-color-light);
+      font-size: 1.2rem;
+      font-weight: 100;
+    }
+  }
+  &__text {
+    width: 70%;
+    margin-right: 2rem;
+    p {
+      font-size: 1rem;
+      max-width: 32rem;
+      color: var(--secondary-color-dark);
+    }
+  }
+  &__emoji {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 3rem;
+      color: var(--color-main);
+    }
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+}
